@@ -3,6 +3,8 @@
 > Read by the AI at the start of every session: Codex and Cursor directly, Claude Code through `CLAUDE.md`.
 > One file, every tool. Keep it under ~100 lines. Link out, don't paste in.
 
+**Not set up yet?** If this file still says `[Product]` below, run the `setup` skill before anything else.
+
 ## What this is
 <!-- 2-3 sentences: the product, who it is for, the one problem it solves. -->
 [Product] helps [specific user] to [do one thing] without [current pain].
@@ -35,6 +37,12 @@
 ## Definition of done
 Works locally, tests pass, `current-state.md` still true, session-log updated.
 
-## End of session
-When I say "wrap up", run the `wrap-up` skill (`.agents/skills/wrap-up/SKILL.md`).
-When I say "sort the inbox", run the `sort-inbox` skill.
+## Phrases
+| I say | You do |
+|---|---|
+| "set up the project" | run the `setup` skill (first time only) |
+| "where are we?" | answer from `docs/wake-up.md` + `docs/session-log.md` |
+| "wrap up" | run the `wrap-up` skill (end of every session) |
+| "sort the inbox" | run the `sort-inbox` skill |
+
+Skills live in `.agents/skills/` (Codex, Cursor) and `.claude/skills/` (Claude Code).

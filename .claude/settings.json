@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cat docs/wake-up.md 2>/dev/null || true"
+            "command": "grep -qF '[Product]' AGENTS.md 2>/dev/null && echo 'This project is not set up yet: offer to run the setup skill (say: set up the project).'; cat docs/wake-up.md 2>/dev/null || true"
           }
         ]
       }

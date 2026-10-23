@@ -20,12 +20,22 @@ sh install.sh /path/to/your/project
 powershell -ExecutionPolicy Bypass -File install.ps1 C:\path\to\your\project
 ```
 
-## Then, in the first 15 minutes, as a team
+## Then set it up (5 minutes, as a team)
 
-1. Fill in `docs/wake-up.md` - 7 lines.
-2. Fill in `docs/current-state.md` - user, scope, stack.
-3. Fill in "What this is" and "How to run" in `AGENTS.md`.
-4. End every session with **"wrap up"**.
+Open your AI tool in the project and say:
+
+> **set up the project**
+
+It reads what's already there, asks you up to 6 questions (what, for whom, the demo moment, scope, stack, team)
+and fills in `AGENTS.md`, `docs/wake-up.md`, `docs/current-state.md` and `docs/decisions.md`.
+Check it with **"where are we?"**.
+
+| Say | When |
+|---|---|
+| **set up the project** | once, at the start |
+| **where are we?** | start of any session |
+| **wrap up** | end of every session |
+| **sort the inbox** | once a day |
 
 ## What's inside
 
@@ -39,9 +49,9 @@ docs/
   session-log.md          handoff between sessions and people
   research/               market research, interviews, sources
   _inbox/                 not sure where it goes? here.
-.agents/skills/           wrap-up, sort-inbox (Codex + Cursor)
+.agents/skills/           setup, wrap-up, sort-inbox (Codex + Cursor)
 .claude/skills/           same skills for Claude Code
-.claude/settings.json     SessionStart hook: shows wake-up.md every session
+.claude/settings.json     SessionStart hook: shows wake-up.md, nudges setup if not done
 ```
 
 | Tool | Reads instructions from | Reads skills from |
