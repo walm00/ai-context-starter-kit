@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat docs/wake-up.md 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}
