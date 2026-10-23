@@ -34,8 +34,11 @@
 | research, notes, links | `docs/research/` |
 | not sure | `docs/_inbox/YYYY-MM-DD-topic.md` |
 
-## Definition of done
-Works locally, tests pass, `current-state.md` still true, session-log updated.
+## Before you say "done"
+1. Run it. Run the tests. Paste the output - "should work" is not done.
+2. Check it against the user and scope in `docs/current-state.md`, not just against the code.
+3. Say what you did NOT check.
+4. Update `docs/current-state.md` if something became true.
 
 ## Phrases
 | I say | You do |
@@ -44,5 +47,6 @@ Works locally, tests pass, `current-state.md` still true, session-log updated.
 | "where are we?" | answer from `docs/wake-up.md` + `docs/session-log.md` |
 | "wrap up" | run the `wrap-up` skill (end of every session) |
 | "sort the inbox" | run the `sort-inbox` skill |
+| "prepare the pitch" / "write an update" | run the `pitch` skill |
 
 Skills live in `.agents/skills/` (Codex, Cursor) and `.claude/skills/` (Claude Code).

@@ -36,6 +36,7 @@ Check it with **"where are we?"**.
 | **where are we?** | start of any session |
 | **wrap up** | end of every session |
 | **sort the inbox** | once a day |
+| **prepare the pitch** | before demo day, or for an update to colleagues |
 
 ## What's inside
 
@@ -49,9 +50,9 @@ docs/
   session-log.md          handoff between sessions and people
   research/               market research, interviews, sources
   _inbox/                 not sure where it goes? here.
-.agents/skills/           setup, wrap-up, sort-inbox (Codex + Cursor)
+.agents/skills/           setup, wrap-up, sort-inbox, pitch (Codex + Cursor)
 .claude/skills/           same skills for Claude Code
-.claude/settings.json     SessionStart hook: shows wake-up.md, nudges setup if not done
+.claude/settings.json     blocks reading .env; shows wake-up.md each session, nudges setup if not done
 ```
 
 | Tool | Reads instructions from | Reads skills from |
