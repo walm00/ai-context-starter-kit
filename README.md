@@ -1,7 +1,10 @@
 # AI context starter kit
 
 The minimum folder structure so your AI coding tool knows what you're building - every session, every teammate.
-Works with **Claude Code, Codex and Cursor**.
+Works with **Lovable, Claude Code, Codex and Cursor**.
+
+**On Lovable?** Read [LOVABLE.md](LOVABLE.md) first: which Lovable feature each piece maps to, how to import the
+skills, and how to pair Lovable with GitHub and a local agent.
 
 > Your AI forgets everything. Your folder doesn't.
 
@@ -57,6 +60,7 @@ docs/
 
 | Tool | Reads instructions from | Reads skills from |
 |---|---|---|
+| Lovable | `AGENTS.md` (root, always read) + Project Knowledge | Workspace skills, imported from this repo (see LOVABLE.md) |
 | Claude Code | `CLAUDE.md` (imports `AGENTS.md`) | `.claude/skills/` |
 | Codex | `AGENTS.md` | `.agents/skills/` |
 | Cursor | `AGENTS.md` | `.agents/skills/` |

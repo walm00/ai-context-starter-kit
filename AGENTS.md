@@ -1,6 +1,6 @@
 # AGENTS.md
 
-> Read by the AI at the start of every session: Codex and Cursor directly, Claude Code through `CLAUDE.md`.
+> Read by the AI at the start of every session: Lovable, Codex and Cursor directly, Claude Code through `CLAUDE.md`.
 > One file, every tool. Keep it under ~100 lines. Link out, don't paste in.
 
 **Not set up yet?** If this file still says `[Product]` below, run the `setup` skill before anything else.
